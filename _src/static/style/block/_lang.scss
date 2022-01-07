@@ -1,0 +1,48 @@
+.lang {
+  display: flex;
+}
+
+.lang__link {
+  padding-left: 5px;
+
+  color: $c-main;
+
+  .header--light & {
+    color: rgba(0,0,0,.6);
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  &:nth-child(1) {
+    position: relative;
+
+    padding-right: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+
+      width: 1px;
+      height: 100%;
+
+      background: #eaece5;
+      opacity: .8;
+    }
+  }
+
+  .header--light &:nth-child(1)::after {
+    background: rgba(0,0,0,.6);
+  }
+
+  &--active {
+    color: $c-accent;
+
+    .header--light & {
+      color: $c-accent;
+    }
+  }
+}

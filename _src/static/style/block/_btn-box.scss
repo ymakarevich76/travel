@@ -1,0 +1,45 @@
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-next,
+.btn-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 47px;
+
+  background-color: transparent;
+  border: 2px solid #a7a49c;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &.swiper-button-disabled {
+    opacity: .5;
+  }
+}
+
+.btn-next {
+  margin-right: 3px;
+}
+
+.btn-next {
+  margin-left: 3px;
+}
+
+.btn-prev svg {
+  transform: rotate(-180deg);
+}
+
+.btn-box svg {
+  width: 20px;
+  height: 20px;
+
+  fill: #a7a49c;
+}

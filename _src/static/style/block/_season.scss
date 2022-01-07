@@ -1,0 +1,60 @@
+.season {
+  padding-top: 50px;
+
+  background-color: #292b31;
+
+  & h2 {
+    @media (max-width: $md) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.season__divider-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  border-top-color: $c-accent;
+}
+
+.season__link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.season__wrap-img {
+  height: 545px;
+  margin-bottom: 12px;
+
+  & img {
+    height: 545px;
+
+    object-fit: cover;
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+}
+
+.season__title {
+  margin-bottom: 10px;
+
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}
+
+.season__divider-desc {
+  border-top-color: $c-accent;
+
+  @media (max-width: $md) {
+    margin: 0 auto 30px;
+  }
+}
+
+.season-slider__box-btn {
+  position: relative;
+  z-index: 20;
+}

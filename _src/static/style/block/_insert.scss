@@ -1,0 +1,96 @@
+.insert {
+  margin-top: -1px;
+  padding-top: 70px;
+  padding-bottom: 155px;
+
+  background-color: #292b31;
+}
+
+.insert__wrap {
+  position: relative;
+
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.insert__bc {
+  position: relative;
+
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: $lg) {
+    bottom: -30px;
+  }
+
+  @media (max-width: $md) {
+    bottom: 0;
+  }
+
+  @media (max-width: $sm) {
+    bottom: -50px;
+  }
+}
+
+.insert__bc-img {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+
+  width: 100%;
+  height: auto;
+
+  transform: translate(-50%, -50%);
+  opacity: .1;
+}
+
+.insert__logo-text {
+  margin-bottom: 17px;
+
+  text-align: center;
+  color: #d7cebe;
+}
+
+.insert__logo-part-1,
+.insert__logo-part-2 {
+  & svg {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    height: 58px;
+
+    fill: #d7cebe;
+  }
+
+  @media (max-width: $lg) {
+    & svg {
+      height: 37px;
+    }
+  }
+
+  @media (max-width: $md) {
+    & svg {
+      height: 60px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    & svg {
+      height: 30px;
+    }
+  }
+}
+
+.insert__logo-part-1 {
+  @media (max-width: $lg) {
+    margin-bottom: 10px;
+  }
+}

@@ -1,17 +1,18 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "Montserrat", sans-serif;
 
 // //////////////////////////////////////// font-size
-$fz-main: 16px;
+$fz-main: 14px;
 
-// //////////////////////////////////////// colors 
-$c-main: #000;
+// //////////////////////////////////////// colors
+$c-main: #eaece5;
 $c-secondary: gray;
-$c-accent: orange;
+$c-accent: #ba917b;
 
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
-$xl: 1199.98px;
+$xl: 1084.98px;
+// $xl: 1199.98px;
 $lg: 991.98px;
 $md: 767.98px;
 $sm: 575.98px;

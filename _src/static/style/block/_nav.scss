@@ -1,0 +1,47 @@
+.nav__link {
+  position: relative;
+
+  display: inline-block;
+  padding: 13px 11px;
+
+  color: $c-main;
+
+  @media (max-width: $xl) {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $lg) {
+    padding: 5px 0;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 0;
+    height: 1px;
+    margin: auto;
+
+    color: transparent;
+
+    background: #aaa;
+
+    transition: all .2s ease;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  .header--light & {
+    color: rgba(0,0,0,.6);
+  }
+}

@@ -1,2 +1,312 @@
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  padding: 14px 0;
+
+  background-color: transparent;
+
+  transition: .5s;
+
+  &--light {
+    background-color: rgba(245,242,238,.95);
+    box-shadow: 0 0 30px 2px rgba(0,0,0,.3);
+  }
+
+  &--dark {
+    background-color: rgba(42,43,49,.9);
+    box-shadow: 0 0 30px 2px rgba(0,0,0,.3);
+  }
+}
+
+.header-blur {
+  @media (max-width: $xl) {
+    display: none;
+
+    transition: .8s;
+  }
+
+  &--active {
+    @media (max-width: $xl) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      background: rgba( 0, 0, 0, .4);
+
+      backdrop-filter: blur(8px);
+    }
+  }
+}
+
+.header-xl {
+  display: none;
+
+  @media (max-width: $xl) {
+    display: block;
+    padding: 25px 0;
+  }
+
+  .header-blur--active + & {
+    // opacity: .1;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $xl) {
+    flex-direction: column;
+  }
+}
+
+.header-xl__container {
+  @media (max-width: $xl) {
+    display: flex;
+  }
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $xl) {
+    flex-direction: column;
+  }
+}
+
+.header-xl__left {
+  @media (max-width: $xl) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-top: -15px;
+  padding-right: 11px;
+
+  @media (max-width: $xl) {
+    padding: 0 11px 11px;
+  }
+
+  @media (max-width: $lg) {
+    padding: 5px 0;
+  }
+}
+
+.header__nav .nav__list {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $xl) {
+    flex-direction: column;
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  @media (max-width: $xl) {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.header-xl__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__phone-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 11px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 5px;
+  }
+}
+
+.header__lang {
+  padding: 0 11px;
+
+  @media (max-width: $xl) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 5px;
+  }
+}
+
+.header__search {
+  .header-xl & {
+    padding-right: 15px;
+  }
+
+  .header-blur--active + .header-xl & {
+    filter: blur(8px);
+  }
+
+  @media (max-width: $xl) {
+    display: flex;
+  }
+
+  & span {
+    display: none;
+
+    @media (max-width: $xl) {
+      display: block;
+      padding-left: 7px;
+
+      color: $c-main;
+      text-transform: uppercase;
+    }
+  }
+
+  & svg {
+    width: 14px;
+    height: 14px;
+
+    fill: #fff;
+
+    .header--light & {
+      fill: rgba(0,0,0,.6);
+    }
+
+    &:hover {
+      fill: $c-accent;
+    }
+
+    .header-xl & {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.header__home {
+  padding-right: 5px;
+
+  & svg {
+    width: 19px;
+    height: 19px;
+
+    fill: $c-main;
+  }
+
+  .header-blur--active + .header-xl & {
+    filter: blur(8px);
+  }
+}
+
+.header__btn {
+  margin: 0 10px;
+
+  .header-xl & {
+    padding: 9px 14px;
+  }
+
+  .header-blur--active + .header-xl & {
+    filter: blur(8px);
+  }
+
+  @media (max-width: $xl) {
+    .header-blur & {
+      margin: 10px 10px 20px;
+    }
+  }
+
+  @media (max-width: $lg) {
+    .header-blur & {
+      margin: 5px 0 10px;
+    }
+  }
+}
+
+.header__phone {
+  padding-right: 15px;
+  & svg {
+    width: 16px;
+    height: 16px;
+
+    fill: $c-main;
+  }
+
+  .header-blur--active + .header-xl & {
+    filter: blur(8px);
+  }
+}
+
+.header__wrap-icon {
+  position: relative;
+  z-index: 1100;
+
+  width: 23px;
+  height: 23px;
+}
+
+.header__icon {
+  position: absolute;
+  top: 50%;
+
+  width: 100%;
+  height: 2px;
+  margin-top: -5px;
+
+  background-color: #fff;
+
+  transition: .5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+    height: 2px;
+    margin-top: 8px;
+
+    background-color: #fff;
+
+    transition: .5s;
+  }
+
+  .header__wrap-icon--close & {
+    transform: rotate(45deg);
+
+    transition: .5s;
+  }
+
+  .header__wrap-icon--close &::before {
+    top: -7px;
+
+    transform: rotate(-90deg);
+
+    transition: .5s;
+  }
 }

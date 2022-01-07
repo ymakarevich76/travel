@@ -2,12 +2,318 @@
 @@include('block/header/header.html')
 
 <main class="main">
+
   <!-- //////////////////////////////////////////////////////////  -->
-  <section class="section">
-    <div class="container">
-      <p>content</p>
-    </div><!--/container-->
+  <section class="promo">
+    <video class="promo__video" autoplay muted preload="auto">
+      <source src="static/img/bc/main-bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="promo__container container ">
+      <div class="promo__content">
+        <h1 class="wow animate__animated animate__fadeInDown" data-wow-offset="100" data-wow-delay="3.1s">PRESIDENT
+          TRAVEL
+          - INDIVIDUAL
+          TRAVELLING WORLDWIDE</h1>
+        <p class="promo__divider divider wow animate__animated animate__fadeInDown" data-wow-offset="100"
+          data-wow-delay="3.2s"></p>
+        <ul class="promo__list list-reset wow animate__animated animate__fadeInDown" data-wow-offset="100"
+          data-wow-delay="3.1s">
+          <li class="promo__item">организация вашего отдыха</li>
+          <li class="promo__item">консьерж-сервис 24/7</li>
+          <li class="promo__item">аренда яхт, вилл,<br>суперкаров и бизнес джетов</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="promo__left">
+      <p class="wow animate__animated animate__bounceInLeft" data-wow-delay="3s">Individual Travelling<br>Worldwide</p>
+    </div>
   </section>
+
+  <section class="popular">
+    <div class="container">
+      <p class="popular__left">Популярные туры</p>
+      <div class="popular-slider swiper">
+        <div class="popular-slider__wrapper swiper-wrapper">
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/1.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">Мексика: Viva el verano</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Мексика</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/2.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">50 оттенков белого</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Антарктида</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/3.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">Удивительная Руанда</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Руанда</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="popular-slider__slide swiper-slide">
+            <a href="#" class="popular__link">
+              <img src="static/img/bc/4.jpg" alt="">
+
+              <div class="popular__desc">
+                <p class="popular__title">Заряд витамином D</p>
+                <div class="popular__divider divider"></div>
+                <p class="popular__subtitle">Мальдивы</p>
+              </div>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+        </div>
+        <!--/swiper-wrapper-->
+      </div>
+      <!--/swiper-->
+      <div class="popular-slider__box-btn btn-box">
+        <div class="popular-slider__btn-prev btn-prev">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+        <div class="popular-slider__btn-next btn-next">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /popular-slider__box-btn -->
+    </div>
+    <!--/container-->
+  </section>
+
+  <section class="view">
+    <h2 class="wow animate__animated animate__fadeInUp">Какой вид отдыха
+      выбираете</h2>
+    <p class="view__divider-title divider wow animate__animated animate__fadeInDown" data-wow-delay="1s"></p>
+    <div class="view__wrap">
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+        <img src="static/img/view/1.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Чартер яхт</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+        <img src="static/img/view/2.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Пляжный и Островной отдых</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="1s">
+        <img src="static/img/view/3.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Сафари</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+        <img src="static/img/view/4.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Гастрономический</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="view__wrap">
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+        <img src="static/img/view/1.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Чартер яхт</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link view__link--2 wow animate__animated animate__fadeIn" data-wow-delay="1s">
+        <img src="static/img/view/2.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Пляжный и Островной отдых</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+        <img src="static/img/view/3.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Сафари</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+      <a href="#" class="view__link view__link--4 wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+        <img src="static/img/view/8.jpg" alt="">
+
+        <div class="view__desc">
+          <p class="view__title">Гастрономический</p>
+          <div class="view__divider divider"></div>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="season">
+    <div class="container">
+      <h2 class="wow animate__animated animate__fadeInUp">Когда планируете путешествие?</h2>
+      <p class="season__divider-title divider wow animate__animated animate__fadeInDown" data-wow-delay="1s"></p>
+
+      <div class="season-slider swiper">
+        <div class="season-slider__wrapper swiper-wrapper">
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/1.jpg" alt="Весна">
+              </div>
+              <h3 class="season__title">Весна</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/2.jpeg" alt="Лето">
+              </div>
+              <h3 class="season__title">Лето</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/3.jpg" alt="Осень">
+              </div>
+              <h3 class="season__title">Осень</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+          <div class="season-slider__slide swiper-slide">
+            <a href="#" class="season__link">
+              <div class="season__wrap-img">
+                <img src="static/img/season/4.jpg" alt="Зима">
+              </div>
+              <h3 class="season__title">Зима</h3>
+              <p class="season__divider-desc divider"></p>
+            </a>
+          </div>
+          <!--/swiper-slide-->
+        </div>
+        <!--/swiper-wrapper-->
+      </div>
+      <!--/swiper-->
+      <div class="season-slider__box-btn btn-box">
+        <div class="season-slider__btn-prev btn-prev">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+        <div class="season-slider__btn-next btn-next">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow-thin"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /popular-slider__box-btn -->
+    </div>
+  </section>
+
+  <section class="insert">
+    <div class="container">
+      <div class="insert__wrap">
+        <div class="insert__bc">
+          <img class="insert__bc-img" src="static/img/icon/insert.svg" alt="">
+        </div>
+
+        <div class="insert__logo">
+          <div class="insert__logo-text">
+            GO TRAVEL WITH
+          </div>
+          <div class="insert__logo-part-1">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#president"></use>
+            </svg>
+          </div>
+          <div class="insert__logo-part-2">
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#travel"></use>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container about__container">
+      <div class="about__desc">
+        <h2 class="about__title wow animate__animated animate__fadeInUp">О компании</h2>
+        <p class="about__divider-title divider wow animate__animated animate__fadeInDown" data-wow-delay="1s"></p>
+        <p class="about__text about__text--accent wow animate__animated animate__fadeInDown" data-wow-delay="1s">
+          PRESIDENT TRAVEL – туристическая компания,
+          которая специализируется на индивидуальном
+          отдыхе и организации Гран-туров по всему миру.
+          Это команда экспертов, сделавших путешествия
+          своей профессией: страстные краеведы,
+          компетентные консьержи и агенты по аренде
+          курортных вилл и шале, яхтсмены и специалисты
+          по бизнес-авиации.
+        </p>
+        <p class="about__text wow animate__animated animate__fadeInDown" data-wow-delay="1.3s">
+          В каждой стране, в каждом месте мы показываем
+          Вам его суть, даем попробовать на вкус,
+          открываем все секреты.
+        </p>
+        <p class="about__text wow animate__animated animate__fadeInDown" data-wow-delay="1.6s">
+          Наши цены – всегда прозрачны, а наши
+          менеджеры – профессионалы, влюбленные в свое
+          дело. К каждому запросу у нас – особенное
+          трепетное отношение, а Ваши пожелания – для
+          нас повод для творчества.
+        </p>
+        <p class="about__text wow animate__animated animate__fadeInDown" data-wow-delay="1.9s">
+          Мы учитываем Ваши вкусы, стиль жизни,
+          привычки, мечты, границы Вашего уединения и
+          создаем из этого Ваш эксклюзивный отдых.
+        </p>
+      </div>
+      <div class="about__wrap-img">
+        <img src="static/img/bc/5.jpg" alt="Img">
+      </div>
+    </div>
+  </section>
+
 </main>
 
 @@include('block/footer/footer.html')

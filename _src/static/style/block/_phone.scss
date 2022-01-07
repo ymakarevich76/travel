@@ -1,0 +1,24 @@
+.phone {
+  display: inline-block;
+
+  color: $c-main;
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  .header--light & {
+    color: rgba(0,0,0,.6);
+  }
+
+  @media (max-width: $lg) {
+    &:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}
